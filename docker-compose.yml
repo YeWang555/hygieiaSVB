@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+ mongodb:
+   image: mongo:3.6
+   ports:
+     - '27017:27017'
+   volumes:
+     - './data/mongodb:/data/db'
+ api:
+   image: hygieiaapi012603
+   privileged: true
+   build: ./api
+   depends_on:
+     - mongodb
+   ports:
+     - '8080:8080'
+   volumes:
+     - './logs:/hygieia/logs'
+ hygieia:
+   image: hygieiaui012605
+   privileged: true
+   build: ./hygieia
+   depends_on:
+     - api
+   ports:
+     - '80:80'
+   volumes:
+     - './logs:/hygieia/logs'
