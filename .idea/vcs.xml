@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hygieia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hygieia-build-jenkins-collector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hygieia-publisher-jenkins-plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hygieia-scm-gitlab-collector" vcs="Git" />
+  </component>
+</project>
